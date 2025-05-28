@@ -35,3 +35,6 @@ Workflow:
         * add policies to role to give access to EMR, S3, Glue, Redshift
         * add MWAA security group to redshift's security groups inboud rules on port 5439
         * create new EMR cluster to run the job
+
+### Data Flow
+![Data Flow](./docs/Data%20Flow.png)
