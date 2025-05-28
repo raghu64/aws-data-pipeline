@@ -1,0 +1,1 @@
+The raw data files are stores under `raw` folder in s3 bucket. 

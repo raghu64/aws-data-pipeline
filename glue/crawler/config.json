@@ -1,0 +1,43 @@
+{
+    "Crawler": {
+        "Name": "etl-practice-crawler-05262025",
+        "Role": "service-role/AWSGlueServiceRole-S3-05262025",
+        "Targets": {
+            "S3Targets": [
+                {
+                    "Path": "s3://etl-practice-s3-05262025/raw/",
+                    "Exclusions": []
+                }
+            ],
+            "JdbcTargets": [],
+            "MongoDBTargets": [],
+            "DynamoDBTargets": [],
+            "CatalogTargets": [],
+            "DeltaTargets": [],
+            "IcebergTargets": [],
+            "HudiTargets": []
+        },
+        "DatabaseName": "etl-practice-catalog-05262025",
+        "Classifiers": [],
+        "RecrawlPolicy": {
+            "RecrawlBehavior": "CRAWL_EVERYTHING"
+        },
+        "SchemaChangePolicy": {
+            "UpdateBehavior": "UPDATE_IN_DATABASE",
+            "DeleteBehavior": "DEPRECATE_IN_DATABASE"
+        },
+        "LineageConfiguration": {
+            "CrawlerLineageSettings": "DISABLE"
+        },
+        "State": "READY",
+        "CrawlElapsedTime": 0,
+        "CreationTime": "2025-05-26T22:25:21+00:00",
+        "LastUpdated": "2025-05-26T22:25:21+00:00",
+        "Version": 1,
+        "Configuration": "{\"Version\":1.0,\"CreatePartitionIndex\":true}",
+        "LakeFormationConfiguration": {
+            "UseLakeFormationCredentials": false,
+            "AccountId": ""
+        }
+    }
+}
